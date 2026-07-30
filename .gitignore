@@ -1,0 +1,15 @@
+# VS Code
+.vscode/
+
+# Build output
+output/
+**/output/
+
+# macOS
+.DS_Store
+
+# Debug symbols
+*.dSYM/
+
+# Executables
+*.out
