@@ -6,8 +6,12 @@ int main(){
     int age;
     std::string name;
 
+    
+
     std::cout << "Plz enter your full name" << std::endl;
     std::getline(std::cin, name);
+
+    std::cout << name.length() << std::endl;
 
     std::cout << "Plz enter your age" << std::endl;
     std::cin >> age;
