@@ -1,17 +1,25 @@
 #include <iostream>
+using namespace std;
 
-int main(){
+// Area of a square
+int area(int side) {
+    return side * side;
+}
 
-    char *msg {"Hello World!"};
+// Area of a rectangle
+int area(int length, int width) {
+    return length * width;
+}
 
-    std::cout << "The value of msg is " << msg << std::endl;
+// Area of a circle
+double area(double radius) {
+    return 3.1416 * radius * radius;
+}
 
-
-
-    std::cout << "The value of *msg is " << *msg << std::endl;
-
-
-
+int main() {
+    cout << "Area of square = " << area(5) << endl;
+    cout << "Area of rectangle = " << area(4, 6) << endl;
+    cout << "Area of circle = " << area(3.0) << endl;
 
     return 0;
 }

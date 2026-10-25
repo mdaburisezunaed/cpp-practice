@@ -1,20 +1,22 @@
 #include <iostream>
+using namespace std;
 
 int main(){
 
-    int decimal = 10;
-    int octal = 020;
-    int hexadecimal = 0xa23;
-    int binary = 0b010101;
+    int a, b;
+    cout << "Plz enter 2 integers(A, B):" << endl;
+    cin >> a >> b;
 
+    int *ptr1, *ptr2;
+    ptr1 = &a;
+    ptr2 = &b;
 
-    std::cout << "Decimal " << decimal << std::endl;
+    cout << "Before swapping: a = " << a << " b = " << b << endl;
+
+    int temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+    cout << "After swapping: a = " << a << " b = " << b << endl;
     
-    std::cout << "Octal " << octal << std::endl;
-
-    std::cout << "Hexadecimal " << hexadecimal << std::endl;
-
-    std::cout << "Binary " << binary << std::endl;
-
     return 0;
 }

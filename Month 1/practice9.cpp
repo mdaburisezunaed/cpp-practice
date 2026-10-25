@@ -1,31 +1,25 @@
 #include <iostream>
+using namespace std;
 
-int main (){
+class Number {
+private:
+    int num;
 
+public:
+    Number(int n) {
+        num = n;
+    }
 
-    //initialization
-/*
-    can be done in two ways
-    
-    1.
-    int a {43};
+    friend void display(Number obj);
+};
 
-    int *b {&a};
+void display(Number obj) {
+    cout << "Number = " << obj.num << endl;
+}
 
-    2.
-*/
-    int *b {nullptr};
-
-    int a {53};
-
-    b = &a;
-
-    std::cout << "The value of a is " << a << std::endl;
-
-    std::cout << "The value of b is " << b << std::endl;
-
-    std::cout << "The value of *b is " << *b << std::endl;
+int main() {
+    Number n(10);
+    display(n);
 
     return 0;
-
 }

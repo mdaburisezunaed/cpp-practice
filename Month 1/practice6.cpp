@@ -1,16 +1,26 @@
 #include <iostream>
+#include <string>
+using namespace std;
+
+class student{
+
+    public:
+     string name;
+     int marks;
+
+     void show(){
+        cout << name << " -- " << marks << endl;
+     }
+};
 
 int main(){
 
-    int a {10};
+    student s1;
+    s1.name = "Rahim";
+    s1.marks = 100;
 
-    int b (20);
+    s1.show();
 
-    int c {a + b};
-
-
-    std::cout << "Sum " << c << std::endl;
-    
-
-    return 0;
 }
+
+

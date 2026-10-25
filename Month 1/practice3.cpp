@@ -1,20 +1,27 @@
 #include <iostream>
+using namespace std;
 
 int main(){
 
-    int age;
-    std::string name;
+    int a, b, c;
 
-    std::cout << "Plz enter your name" << std::endl;
-    std::cin >> name;
+    cout << "Plz enter 3 integers(A, B, C):" << endl;
 
-    std::cout << "Plz enter your age" << std::endl;
-    std::cin >> age;
+    cin >> a >> b >> c;
 
-        //std::cin >> name >> age;
-        //taking two inputs together
-    std::cout << "Hello " << name << ". Your age is " << age << std::endl;
+    if (a > b){
+        if (a > c)
+            cout << "A is the largest number" << endl;
+        else
+            cout << "C is the largest number."<< endl;
+    }
+    else{
+        if(b > c)
+            cout << "B is the largest number." << endl;
 
+        else 
+            cout << "C is the largest number." << endl;
+    }
 
 
 
